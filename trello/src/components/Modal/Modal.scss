@@ -1,0 +1,48 @@
+.modal{
+    display: flex;
+    background-color: gainsboro;
+    width: 60%;
+    padding: 20px;    
+    z-index: 1;
+    position: fixed;
+    top: 20px;
+    left: 215px;
+    box-shadow:16px 14px 13px -9px rgba(0,0,0,0.76);
+    .x{
+        color: #6b778c;
+        display: flex;
+        position: absolute;
+        margin-left: 780px;
+    }
+    .buttons-container{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+
+        .section-coments{
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+        }
+        .modal-buttons{
+            width: 30%;
+        }
+        .text-modal{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            text-align: center;
+            margin-top: 5%;
+            .title-text{
+                color:#6b778c;
+                font-size: 20px;
+            }
+            .add{
+                display: flex;    
+                flex-direction: column;
+                align-items: center;
+            }
+        }    
+    }
+}

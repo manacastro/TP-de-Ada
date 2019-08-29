@@ -1,0 +1,73 @@
+@import '../../Styles/colors';
+
+
+.add-column-control {    
+    width: 250px;
+    height: auto;
+    border-radius: 5px;
+    background-color: rosybrown;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    align-items: center;
+    color: white;
+    justify-content: space-between;
+    .column-new{
+        .bot{
+            display: flex;
+            flex-direction: row-reverse;
+            width: 225px;
+            justify-content: space-around;
+            .x{
+                margin-top: 8%;
+                font-size: 25px;
+            }
+            .save{
+                background-color:$color-primary-button;
+                width: 65%;
+                height: 30px;
+                border-radius: 5px;
+                text-align: center;
+                padding-top: 1%;
+            }
+        }
+            
+    }
+    .column-title-input {
+        width: 100%;
+        color:$color-primary-button;
+        box-sizing: border-box;       
+        border-radius: 3px;
+        display: block;
+        line-height: 20px;        
+        border: none;        
+        margin-bottom: 4px;        
+        padding: 5px 10px;       
+        resize: none;
+        height: 54px;
+        font-family: inherit;
+        background-color: rosybrown;
+    }
+
+    .add-colum-button{
+        background-color:$color-primary-button;
+        border-radius: 5px;
+        text-align: center;       
+        height: 30px;
+        width: 235px;
+        margin-top: 10px;
+        padding-top: 5px;
+    &:hover {
+        background-color:$color-hover-button;
+        color:white;
+        cursor: pointer;
+        }
+    &:active {
+        background-color: $color-active-button;
+        box-shadow: none;
+        border: none;            
+        cursor: pointer;
+    }
+    } 
+}

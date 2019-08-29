@@ -1,0 +1,17 @@
+.navHeader{
+    background-color:rgb(165,120,101);
+    width: 98%;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    p{
+        align-items: center;        
+        display: flex;
+    }    
+}

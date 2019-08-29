@@ -1,0 +1,33 @@
+@import '../../Styles/colors';
+
+.icon-text {
+    background-color: rosybrown;
+    box-shadow: none;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 32px;
+    margin-top: 8px;
+    max-width: 300px;
+    overflow: hidden;
+    padding: 6px 12px;
+    position: relative;
+    text-decoration: none;  
+    font-size: 14px;
+    
+    &:hover {
+        background-color:$color-primary-button;
+        color:white;
+    }
+    &:active {
+        background-color: #e4f0f6;
+        box-shadow: none;
+        border: none;
+        color: $color-primary-button;
+    }
+}
+svg {
+    padding: 0 5px 0 0;
+}

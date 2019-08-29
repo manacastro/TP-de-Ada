@@ -1,0 +1,29 @@
+.tag-small {    
+    width: 30%;
+    height: 15px;    
+    color:white;
+    font-size: 8px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    &:hover {
+        cursor: pointer;
+    }    
+}
+.tag-big {    
+    width: 80%;
+    height: 35px;    
+    color:white;
+    font-size: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+    }    
+}
