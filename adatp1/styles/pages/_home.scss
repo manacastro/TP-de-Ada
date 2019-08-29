@@ -1,0 +1,334 @@
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $main-font;
+
+    @media (max-width: 750px) {
+        #articulo-2 {
+            display: none;
+        }
+    }
+
+    // CAROUSEL
+    .carousel-container {
+        display: flex;
+        justify-content: space-between;
+        .carousel {
+            width: 24%;
+            height: auto;
+            overflow: hidden;
+            position: relative;
+            img {
+                width: 100%;
+                height: 99%;
+            }
+            
+            .description {
+                width: 100%;
+                height: 25%;
+                background-color: $main-color;
+                opacity: 0.7;
+                color: white;
+                position: absolute;
+                margin-top: 250px;
+                bottom: -26%;
+                overflow: hidden;
+                transition-property: bottom;
+                transition-delay: 0.2s;
+                transition-duration: 0.7s;
+
+                .date-comments {
+                    display: flex;
+                    justify-content: flex-start;
+                    font-size: 12px;
+                    margin: 10px;
+                }
+                p {
+                    font-size: 14px;
+                    margin: 10px;
+                }
+            }
+        } 
+        .carousel:hover .description {
+            bottom: 0px;
+        }
+
+        @media (max-width: 750px){
+            .carousel {
+                width: 100%;
+            } 
+            .carousel-2 {
+                display: none;
+            }
+            .carousel-3 {
+                display: none;
+            }
+            .carousel-4 {
+                display: none;
+            }
+        }
+    }
+
+    // OPTIONS
+    .options-container {
+        width: 84%;
+        margin-top: 35px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        position: relative;
+        @media (max-width: 750px) {
+            width: 70%;
+            height: auto;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .option {
+            width: 31%;
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            @media (max-width: 750px) {
+                width: 100%;
+                margin-top: 20px;
+            }
+            
+            .img-option {
+                width: 100%;            
+                border-radius: 10%;
+                @media (max-width: 780px) {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+            .option-receta {
+                width: 50%;               
+                color: black;
+                background-color: white;
+                border-radius: 30px;
+                border: none;
+                font-family: $main-font;
+                font-size: 14px;
+                line-height: 40px;
+                display: inline-block;
+                text-align: center;
+                position: absolute;
+                text-align: center;
+                left: 25%;
+                top:40%;
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+            .option-receta:hover {
+                background-color: $main-color;
+            }            
+        }           
+    }
+    // ARTICULOS
+    .column-general {       
+        width: 80%;
+        margin-top: 25px;
+        @media (max-width: 700px) {
+        display: flex;
+        flex-direction: column-reverse;
+        }
+        .informacion {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 20px;
+            @media (max-width: 700px) {
+                justify-content: center;
+                
+            }
+            
+            .rec {
+                width: 65%;
+                height: 150px;
+                text-align: center;
+                iframe {
+                    width: 100%;
+                }
+                @media (max-width: 800px) {
+                    display: none;
+                }
+            }
+            .biografia {
+                display: flex;
+                flex-direction: column;
+                width: 32%;
+                text-align: center;
+                margin-bottom: 30px;
+                    @media (max-width: 800px) {
+                        justify-content: center;
+                        width: 100%;
+                    }
+                .titulo-biografia {
+                    background-color: $biografia-color;
+                    width: 100%;
+                    height: 30px;
+                    font-family: $main-font;
+                    padding-top:15px;
+                }        
+                .img-biografia {
+                    border-radius: 50%;
+                    width: 80%;
+                    margin: 20px;
+                    @media (max-width: 750px) {
+                        width: 50%;
+                    }
+                }
+                .name {
+                    font-family:$main-font;  
+                    margin: 0px; 
+                    font-size: 25px;
+                    font-weight: unset;        
+                }
+                .info-biografia {
+                    font-family: $main-font;
+                    font-size: 16px;
+                    color: $font-color;
+                    font-weight: unset;                   
+                }
+                .news-biografia {
+                    width: 100%;
+                    height: 30px; 
+                    font-family: $main-font; 
+                    padding-top:15px;
+                    background-color: $biografia-color;                
+                }
+            }    
+        }   
+        .articulo {
+            display: flex;
+            margin-top: 30px;
+            font-family: $main-font;
+            border-top: 1px solid $font-color;
+            width:65%;
+                @media (max-width: 800px) {
+                    width: 100%;
+                }
+            
+            .box-img-art {     
+                width: 40%; 
+                .img-art {
+                    width: 100%;
+                    border-radius: 10%;
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+                @media (max-width: 800px) {
+                    flex-direction: column;
+                    display: none;
+                }
+            }
+            .art {
+                margin:4%;
+                width: 50%;
+                @media (max-width: 800px) {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .date-art {
+                    display: flex;
+                    color: $font-color; 
+                    .encabezado-art {
+                        display:flex;
+                        color: $font-color;  
+                        .info-art {                    
+                            color: $font-color;
+                            font-size: 14px;                                  
+                        }                     
+                    }
+                    .encabezado-art1 {
+                        display:flex;
+                        color: $font-color;
+                        margin-left: 10%;
+                        width: 140px;
+                        justify-content: space-between;
+                        a {
+                            display: flex;
+                            align-items: center;
+                            color: rgba(131, 130, 130, 0.849);
+                            text-decoration: none;    
+                        }
+                        p {
+                            margin-top: 14px;
+                            margin-left: 3px;                   
+
+                        }                         
+                    }                    
+                }          
+                .title-art {
+                    font-size: 24px;                  
+                }
+                .descripcion-art {
+                    color: $font-color;
+                    font-size: 16px;
+                    font-weight: unset;
+                    @media (max-width: 800px) {
+                        text-align: center;
+                        margin-bottom: 15%;
+                        margin: 5%;
+                    }
+                }
+                .button-art {
+                    .read-art {
+                        background-color: $biografia-color;
+                        border-radius: 10px;
+                        width: 60%;
+                        height: 40px;
+                        border:none;
+                        justify-content: center;
+                        margin-top: 5%;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        @media (max-width: 750px) {    
+                           width: 100%;
+                        }    
+                    }
+                    .read {
+                        color:black;
+                        justify-content: center;
+                        text-decoration: none;                                               
+                    }            
+                    .far  {
+                    margin-top: 16px;
+                    }
+                    .fas {
+                    margin-top: 16px;
+                    }
+                }   
+            }    
+        }
+        .redes-sociales {
+            font-family: $main-font;
+            color: $font-color;
+            display: flex;
+            justify-content: space-between;
+            width: 100%; 
+            border-bottom: 1px solid $font-color;
+            margin: 20px;
+            .fab {
+                margin-top: 15px;
+                margin: 15px;
+                display: flex;
+            }          
+            .link-redes {
+                display: flex;
+                a {
+                    color: rgba(131, 130, 130, 0.849);
+                    text-decoration: none;
+                    display: flex;
+                }
+            }  
+        }       
+
+    }
+}

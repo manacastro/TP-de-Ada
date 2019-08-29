@@ -1,0 +1,54 @@
+.redes-sociales {
+    font-family: $main-font;
+    color:$font-color;
+    display: flex;
+    justify-content: space-around;
+    width: 100%; 
+    border-bottom:1px solid $font-color;
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    @media (max-width: 950px){
+        justify-content: space-around;
+        width: 100%;
+    }
+   
+    .fab {
+        margin-top: 15px;
+        margin: 15px;
+        display: flex;
+    }
+
+    .link-redes {
+        display: flex;
+        a {
+            color: rgba(131, 130, 130, 0.849);
+            text-decoration: none;
+            display: flex;
+        }
+    }    
+    .name-redes {
+        @media (max-width:950px){
+            display: none
+        }        
+    }
+    .arrow {
+        display: none;
+        .arrow-1 i {
+            text-decoration: none;
+            color: $main-color;
+        }                
+        @media (max-width:780px){
+            display: flex;            
+            font-size: x-large;
+            align-items: flex-end;
+            position: absolute;
+            transform: matrix(1, 0, 0, 1, -12, 0); 
+            left: 50%;     
+            margin-top: 50px; 
+            background-color: white;
+            margin-bottom: 20px;             
+        }
+        
+    }
+}

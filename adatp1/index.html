@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Emilys+Candy|Germania+One|Indie+Flower|Playfair+Display:400,900|ZCOOL+XiaoWei"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/css/main.css">
+    <title>Mi blog de cocina</title>
+    <link rel="stylesheet" href="tp-results/result.css">
+    <script src="tp-results/result.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo"><a href="index.html">Mi Blog de Cocina</a></h1>
+        <nav id="nav-desktop">
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html">HOME</a></li>
+                <li class="menu-item">PLATOS <i class="fas fa-sort-down"></i>
+                    <ul class="submenu">
+                        <li class="submenu-item"><a href="./html/receta.html">Ensalada</a></li>
+                        <li class="submenu-item">Carne</li>
+                        <li class="submenu-item">Helado</li>
+                    </ul>
+                </li>
+                <li class="menu-item">SOBRE MI</li>
+                <li class="menu-item">CONTACTO</li>
+            </ul>
+        </nav>
+        <nav id="nav-mobile">
+            <div class="barra">
+                <div class="menu-mobile">
+                    <i class="menu-h fas fa-bars"></i>
+                    <p class="menu-h">MENU
+                        <ul class="menu-mobile-options">
+                            <li>HOME</li>
+                            <li>PLATOS</li>
+                            <li>SOBRE MI</li>
+                            <li>CONTACTO</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="home">
+        <!-- CAROUSEL -->
+        <div class="carousel-container">
+            <div class="carousel carousel-1">
+                <div>                    
+                    <a href="./html/receta.html"><img src="images/img-1.jpg"></a>
+                </div>
+                <div class="description">
+                    <div class="date-comments">
+                            <!--
+                            ***********************************
+                                COMENTARIO:
+                                label va siempre asociado a elementos de un form (input, textarea, etc)
+                                para este caso podrían usar un elemento span como elemento en línea
+                            ***********************************
+                            -->
+                        <label>Mayo 17, 2017 |</label>
+                        <label>5 comentarios</label>
+                    </div>
+                    <p>"Los mejores tacos del país en pocos pasos"</p>
+                </div>
+            </div>
+            <div class="carousel carousel-2">
+                <img src="images/img-2.jpg">
+                <div class="description">
+                    <div class="date-comments">
+                        <label>Mayo 14, 2017 |</label>
+                        <label>8 comentarios</label>
+                    </div>
+                    <p>"Delicias express!"</p>
+                </div>
+            </div>
+            <div class="carousel carousel-3">
+                <img src="images/img-3.jpg">
+                <div class="description">
+                    <div class="date-comments">
+                        <label>Mayo 12, 2017 |</label>
+                        <label>5 comentarios</label>
+                    </div>
+                    <p>"Postres saludables para todo momento"</p>
+                </div>
+            </div>
+            <div class="carousel carousel-4">
+                <img src="images/img-4.jpg">
+                <div class="description">
+                    <div class="date-comments">
+                        <label>Mayo 05, 2017 |</label>
+                        <label>6 comentarios</label>
+                    </div>
+                    <p>"Bruschetas imperdibles y super rápidas"</p>
+                </div>
+            </div>
+        </div>
+        <!-- OPTIONS -->
+        <div class="options-container">
+            <div class="option">
+                <img class="img-option" src="images/platos.jpeg">
+                <button class="option-receta"><a href="./html/platos.html">PLATOS</a></button>
+            </div>
+            <div class="option">
+                <img class="img-option" src="images/recetas.jpg">
+                <button class="option-receta"><a href="./html/receta.html">RECETAS</a></button>
+            </div>
+            <div class="option">
+                <img class="img-option" src="images/exoticos.jpg">
+                <button class="option-receta"><a href="./html/exoticos.html">EXOTICOS</a></button>
+            </div>
+        </div>
+        <!-- COLUMN GENERAL -->
+        <!--
+        ***********************************
+            COMENTARIO:
+            Traten de que las clases esten en un idioma o en otro, porque sino 
+            a la hora de tener que agregar nuevas no sabemos en qué idioma
+            tenemos que escribirlas 
+        ***********************************
+        -->
+        <div class="column-general">
+            <div class="informacion">
+                <div class="rec">
+                    <iframe width="650" height="531" src="https://www.youtube.com/embed/HcHO_nkmbNM" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <aside class="biografia">
+                    <div class="titulo-biografia">SOBRE MI</div>
+                    <div class="biografia-contenido">
+                        <img src="images/biografia.jpg" class="img-biografia"/>
+                        <h1 class="name">Ximena Saenz</h1>
+                        <h2 class="info-biografia">Es cocinera y diseñadora. Nació en la provincia de Buenos Aires en
+                            1983 y cocina desde que tiene uso de razón.</h2>
+                    </div>
+                    <div class="news-biografia">NEWSLETTER</div>
+                </aside>
+            </div>
+            <!-- ARTICULOS -->
+            <!--
+            ***********************************
+                COMENTARIO:
+                Agregarle la clase articula a un elemento article es un poco
+                redundante, precisamente article es un div semántico que nos evita
+                tener que utilizar la clase articulo (o article). Podria tener otras
+                clases, pero como en la pagina no hay otros elementos articles,
+                directamente lo referimos en css segun su tipo 
+            ***********************************
+            -->
+            <article class="articulo" id="articulo-1">
+                <div class="box-img-art">
+                    <img class="img-art" src="images/nota1.JPG" alt="">
+                </div>
+                <!--
+                ***********************************
+                    COMENTARIO:
+                    "art" es un poco vaga y no deja muy en claro a que refiere,
+                    porque ya esta incluida dentro de un elemento article. Una opcion
+                    podria ser "contenedor-info-articulo" o algo por el estilo 
+                ***********************************
+                -->
+                <div class="art">
+                    <div class="date-art">
+                        <div class="encabezado-art">
+                            <p class="info-art">by Maria|Mayo 19, 2017 </p>
+                        </div>
+                        <div class="encabezado-art1">
+                            <a href="#">
+                                <i class="far fa-heart"></i>
+                                <p>20</p>
+                            </a>
+                            <a href="#">
+                                <i class="far fa-comments"></i>
+                                <p>10</p>
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-share-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h1 class="title-art">Delicias dulces</h1>
+                    <h2 class="descripcion-art">En este articulo van a poder ver una receta muy simple, sana y muy rica.
+                    </h2>
+                    <!--
+                    ***********************************
+                        COMENTARIO:
+                        "button-art" debería corresponder al elemento button. En todo caso,
+                        el div podría llamarse "button-art-container"
+                        "read" también es un poco vago, si lo leemos en el css no sabemos bien a qué refiere,
+                        una sugerencia podría ser "link-receta", o "recipe-link" 
+                    ***********************************
+                    -->                    
+                    <div class="button-art">
+                        <button class="read-art"><a class="read" href="./html/receta.html">Leer más</a></button>
+                    </div>
+                </div>
+            </article>
+            <article class="articulo" id="articulo-2">
+                <div class="box-img-art">
+                    <img class="img-art" src="images/nota2.JPG" alt="">
+                </div>
+                <div class="art">
+                    <div class="date-art">
+                        <div class="encabezado-art">
+                            <p class="info-art">by Maria|Mayo 19, 2017 </p>
+                        </div>
+                        <div class="encabezado-art1">
+                            <a href="#">
+                                <i class="far fa-heart"></i>
+                                <p>43</p>
+                            </a>
+                            <a href="#">
+                                <i class="far fa-comments"></i>
+                                <p>70</p>
+                            </a>
+                            <a href="#">
+                                <i class="fas fa-share-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <h1 class="title-art">Comidas simples</h1>
+                    <h2 class="descripcion-art">En este articulo van a poder ver una receta muy simple, sana y muy rica.
+                    </h2>
+                    <div class="button-art">
+                        <button class="read-art"><a class="read" href="./html/receta.html">Leer más</a></button>
+                    </div>
+                </div>
+            </article>
+            
+        </div>
+    </div>
+    <footer class="redes-sociales">
+            <div class="link-redes">
+                <a href="http://www.facebook.com">
+                    <i class="fab fa-facebook-f"></i>
+                    <p class="name-redes">FACEBOOK</p>
+                </a>
+            </div>
+            <div class="link-redes">
+                <a href="https://twitter.com">
+                    <i class="fab fa-twitter"></i>
+                    <p class="name-redes">TWITTER</p>
+                </a>
+            </div>
+            <div class="link-redes">
+                <a href="https://www.google.es/">
+                    <i class="fab fa-google-plus-g"></i>
+                    <p class="name-redes">GOOGLE+</p>
+                </a>
+            </div>
+            <div class="link-redes">
+                <a href="https://ar.linkedin.com/">
+                    <i class="fab fa-linkedin"></i>
+                    <p class="name-redes">LINKEDIN</p>
+                </a>
+            </div>
+            <div class="link-redes">
+                <a href="https://www.instagram.com/accounts/login/?hl=es-la">
+                    <i class="fab fa-instagram"></i>
+                    <p class="name-redes">INSTAGRAM</p>
+                </a>
+            </div>
+            <div class="link-redes">
+                <a href="https://www.youtube.com/?gl=AR&hl=es-419">
+                    <i class="fab fa-youtube"></i>
+                    <p class="name-redes">YOUTUBE</p>
+                </a>
+            </div>
+            <div class="arrow">
+                <a class= "arrow-1" href="index.html"><i class="fas fa-arrow-circle-up"></i></a>
+            </div>
+        </footer>
+</body>
